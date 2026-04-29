@@ -1,24 +1,22 @@
-// middleware.ts
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
-
-export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
-
-  if (pathname.startsWith('/docs/internal')) {
-    const token = request.cookies.get('ffm_internal_token')?.value;
-    const expected = process.env.INTERNAL_TOKEN;
-
-    if (!expected || token !== expected) {
-      const loginUrl = new URL('/internal-login', request.url);
-      loginUrl.searchParams.set('redirect', pathname);
-      return NextResponse.redirect(loginUrl);
-    }
-  }
-
-  return NextResponse.next();
-}
-
+// middleware.ts — Vercel Edge Middleware (framework-agnostic, no next/server)
 export const config = {
   matcher: ['/docs/internal/:path*'],
 };
+
+export default function middleware(request: Request) {
+  const url = new URL(request.url);
+  const cookieHeader = request.headers.get('cookie') ?? '';
+
+  const token = cookieHeader
+    .split(';')
+    .map(c => c.trim().split('='))
+    .find(([name]) => name === 'ffm_internal_token')?.[1];
+
+  const expected = process.env.INTERNAL_TOKEN;
+
+  if (!expected || token !== expected) {
+    const loginUrl = new URL('/internal-login', url.origin);
+    loginUrl.searchParams.set('redirect', url.pathname);
+    return Response.redirect(loginUrl.toString(), 302);
+  }
+}
