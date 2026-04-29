@@ -4,21 +4,21 @@ title: Pre-sale Order Processing
 sidebar_label: Pre-sale Orders
 ---
 
-# 预售订单处理
+# Pre-sale Order Processing
 
-## TikTok 预售订单
+## TikTok Pre-sale Orders
 
-1. 在 TikTok 平台后台将商品链接维护为**预售商品**
-2. 订单进入 SCM 后状态显示为**预售订单**，无库存占用
+1. Set the product listing as a **Pre-sale Product** in TikTok Seller Center
+2. Once the order enters SCM, it will show a status of **Pre-sale Order** with no inventory reserved
 
-![预售订单状态](/img/img_059.png)
+![Pre-sale Order Status](/img/img_059.png)
 
-3. 预售期结束后，在 SCM 发货单列表点击【激活】→ 审核下发仓库
+3. After the pre-sale period ends, click **[Activate]** in the SCM shipment order list → Approve and send to warehouse
 
-## Lazada / Shopee 预售订单
+## Lazada / Shopee Pre-sale Orders
 
-![Lazada Shopee预售](/img/img_060.png)
+![Lazada Shopee Pre-sale](/img/img_060.png)
 
-预售订单进入 SCM 后状态正常，但系统会根据预售发货期限控制审核时间。请确认平台维护的预售发货时间与仓库出库时效匹配。
+Pre-sale orders enter SCM with a normal status, but the system controls the approval time based on the pre-sale shipping deadline. Ensure the pre-sale shipping time configured on the platform aligns with the warehouse's outbound SLA.
 
-如有疑问请联系运营人员确认。
+If you have questions, please contact operations staff to confirm.

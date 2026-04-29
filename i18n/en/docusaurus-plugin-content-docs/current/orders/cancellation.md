@@ -4,22 +4,22 @@ title: Platform Order Cancellation
 sidebar_label: Order Cancellation
 ---
 
-# 平台订单取消
+# Platform Order Cancellation
 
-## SCM 拉单方式下的取消
+## SCM Pull-mode Cancellations
 
-| 取消时机 | 处理方式 |
-|---------|---------|
-| SCM 审核**前**取消（平台状态已取消） | 不再审核，无需额外操作 |
-| SCM 审核进 WMS **后**取消（平台状态已取消） | 仓库通知客户后执行拦截撤回操作 |
+| Cancellation Timing | Handling |
+|--------------------|---------|
+| Cancelled **before** SCM approval (platform status: cancelled) | Do not approve; no further action needed |
+| Cancelled **after** SCM approval pushed to WMS (platform status: cancelled) | Notify customer; warehouse executes intercept and recall |
 
-## ERP 推单方式下的取消
+## ERP Push-mode Cancellations
 
-| 情况 | 处理方式 |
-|------|---------|
-| ERP 推送进 SCM 后取消（平台状态未知） | 状态为"获取面单失败"，通知客户拦截 |
-| ERP 推送且审核到 WMS 后取消 | 在快递交接环节提示错误，通知客户拦截 |
+| Scenario | Handling |
+|----------|---------|
+| Cancelled after ERP pushes to SCM (platform status unknown) | Status shows "Failed to get shipping label"; notify customer to intercept |
+| Cancelled after ERP pushes and approved to WMS | Error flagged at courier handoff; notify customer to intercept |
 
-![ERP推单取消处理](/img/img_062.png)
+![ERP Push Cancellation Handling](/img/img_062.png)
 
-**拦截操作：** 在 SCM WMS 中找到对应发货单 → 操作【拦截】，仓库收到指令后撤回包裹。
+**Intercept operation:** Find the corresponding shipment order in SCM WMS → Execute **[Intercept]**; the warehouse will then recall the package.

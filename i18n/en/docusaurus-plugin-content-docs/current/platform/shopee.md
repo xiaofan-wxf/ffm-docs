@@ -4,39 +4,39 @@ title: Shopee Store Authorization
 sidebar_label: Shopee
 ---
 
-# Shopee 店铺授权
+# Shopee Store Authorization
 
-## 授权入口
+## Authorization Entry
 
-SCM → 设置 → 店铺档案 → 选择 Shopee 店铺 → 点击【授权】
+SCM → Settings → Store Profile → Select Shopee Store → Click **[Authorize]**
 
-## 常见问题
+## Common Issues
 
-### 授权过期后重新授权失败
+### Re-authorization fails after previous authorization expires
 
-**解决方法：**
-1. 在 Shopee 卖家后台撤销旧授权
-2. 回到 SCM 店铺档案，重新点击【授权】
-3. 按照提示完成 OAuth 流程
+**Solution:**
+1. Revoke the old authorization in Shopee Seller Center
+2. Return to SCM Store Profile and click **[Authorize]** again
+3. Complete the OAuth flow as prompted
 
-### Shopee SIP 国际平台店铺授权失败
+### Shopee SIP International Store Authorization Failed
 
-**原因：** SIP 模式为 1 个自运营店铺（主店铺）对多个子店铺，系统暂不支持选择单一子店铺授权。
+**Cause:** SIP mode is a 1-to-many structure (one self-operated main store to multiple sub-stores). The system currently does not support authorizing individual sub-stores.
 
-**解决方法：** 使用手工单方式处理。下载平台面单 PDF 文件上传，系统识别平台运单号后正常出库。
+**Solution:** Use manual order entry. Download the platform shipping label PDF and upload it; the system recognizes the platform tracking number and proceeds with outbound processing.
 
-### 自动同步库存失败
+### Auto stock sync failure
 
-**库存日志：Failed to update stock**
+**Log: Failed to update stock**
 
-一品多仓模式下，平台不支持单独修改海外仓库存。暂时在平台手动修改库存，等待平台接口更新。
+In multi-warehouse mode, the platform does not support updating overseas warehouse inventory individually. Manually update inventory on the platform in the meantime and wait for the platform API to be updated.
 
-**库存日志：Stock should be larger than 80**
+**Log: Stock should be larger than 80**
 
-店铺参加了平台锁定库存活动，库存必须大于 80 才能更新。
+The store has joined a platform inventory lock promotion; inventory must be above 80 to update.
 
-![库存锁定活动](/img/img_052.png)
+![Inventory Lock Promotion](/img/img_052.png)
 
-### 平台拆单（订单先进 SCM 后平台拆单）
+### Platform order split (order enters SCM before platform splits it)
 
-若订单已进入 SCM 后平台执行拆单，请联系运营人员手动处理拆单后的子单据。
+If an order has already entered SCM and the platform then splits it, please contact operations staff to manually handle the split sub-orders.

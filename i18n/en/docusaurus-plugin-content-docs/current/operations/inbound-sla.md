@@ -4,21 +4,21 @@ title: Inbound SLA
 sidebar_label: Inbound SLA
 ---
 
-# 入库时效
+# Inbound SLA
 
-| 商品类型 | 时效 |
-|---------|------|
-| 普通商品（预约到货） | 收货后 48 小时内完成上架 |
-| 新品（需做新品维护） | 收货后不超过 72 小时 |
+| Product Type | SLA |
+|-------------|-----|
+| Regular products (pre-scheduled delivery) | Shelved within 48 hours of receipt |
+| New products (requiring new product maintenance) | No more than 72 hours after receipt |
 
-## 说明
+## Notes
 
-- 通过预约方式到货的货物优先处理
-- 临时到货（未预约）优先级最低，时效不做承诺
-- 紧急入库请联系商务，另行安排额外人力（另行报价）
+- Pre-scheduled deliveries are processed with priority
+- Walk-in deliveries (no appointment) have the lowest priority and no SLA guarantee
+- For urgent inbound requests, contact your account manager in advance to arrange extra manpower (additional charges apply)
 
-## 收货时间
+## Receiving Hours
 
-**正常收货：** 周一至周六 09:00–16:00
+**Regular receiving:** Monday to Saturday, 09:00–16:00
 
-**不收货：** 周日、法定节假日、大促前 1 天 / 后 2 天
+**No receiving:** Sundays, Thai public holidays, 1 day before and 2 days after major promotions

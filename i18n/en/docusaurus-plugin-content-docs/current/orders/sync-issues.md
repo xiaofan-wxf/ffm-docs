@@ -4,60 +4,60 @@ title: Order Sync Issues
 sidebar_label: Order Sync
 ---
 
-# 订单抓取与同步问题
+# Order Sync Issues
 
-## 订单未进入 SCM
+## Order Not Entering SCM
 
-**原因：** 平台订单状态已被手动点击发货，导致平台状态变更后接口无法推送。
+**Cause:** The order was manually marked as shipped on the platform, causing a status change that prevents the API from pushing it to SCM.
 
-**解决方法（手工同步）：**
-1. SCM → 销售 → 发货单 → 点击【新增】右下拉键 → 选择**线上店铺**
-2. 填写外部单号（平台订单号）→ 点击【获取订单】和【同步订单日志】
-3. 订单正常抓入发货单页面
+**Solution (manual sync):**
+1. SCM → Sales → Shipment Orders → Click the dropdown arrow next to **[New]** → Select **Online Store**
+2. Enter the external order number (platform order ID) → Click **[Fetch Order]** and **[Sync Order Log]**
+3. The order should now appear in the shipment order list
 
-**COD 订单说明：** COD 订单接口比正常付款订单滞后，一般稍等片刻即可自动抓取，或按上述方法手动同步。
+**COD order note:** COD order API pushes are delayed compared to regular paid orders. Wait a moment for automatic sync, or use the manual sync method above.
 
-## 同步日志：订单不属于该仓库
+## Sync Log: Order does not belong to this warehouse
 
-**完整日志：** `Not configured to get orders from this warehouse: 748226486355xxxxxxxx`
+**Full log:** `Not configured to get orders from this warehouse: 748226486355xxxxxxxx`
 
-**排查方法：**
-1. SCM → 设置 → 店铺档案 → 找到订单所属店铺 → 点击【修改】
-2. 点击【获取平台仓库】→ 检查是否显示 Flash 仓库
-3. 若显示其他仓库，需在平台后台将发货地址维护为 Flash 仓库地址
-4. 重新点击【获取平台仓库】→ 出现 Flash 仓库后点击【编辑】
-5. 是否获取该仓订单：**是** → 保存
+**Troubleshooting steps:**
+1. SCM → Settings → Store Profile → Find the store the order belongs to → Click **[Edit]**
+2. Click **[Fetch Platform Warehouses]** → Check if Flash warehouse appears
+3. If another warehouse is shown, update the shipping address to Flash warehouse address in the platform back-end
+4. Click **[Fetch Platform Warehouses]** again → When Flash warehouse appears, click **[Edit]**
+5. Set "Fetch orders from this warehouse": **Yes** → Save
 
-![店铺档案设置](/img/img_039.png)
-![获取平台仓库](/img/img_040.png)
+![Store Profile Settings](/img/img_039.png)
+![Fetch Platform Warehouses](/img/img_040.png)
 
-## 订单预处理异常
+## Order Pre-processing Exceptions
 
-### 商品异常
+### Product Exception
 
-**原因：**
-- 未在平台商品链接维护 Seller SKU
-- 平台维护的 SKU 与 SCM 商品档案不一致
+**Causes:**
+- Seller SKU not maintained in the platform product listing
+- Platform SKU does not match the product profile in SCM
 
-**解决方法：** 在 SCM 商品映射关系中手动维护映射，或更正平台 SKU 后重新同步。
+**Solution:** Manually maintain the mapping in SCM product mapping, or correct the platform SKU and re-sync.
 
-### 地址异常
+### Address Exception
 
-**原因：** 店铺档案勾选了"启用卖家自己发货（线下快递）"参数，导致校验平台地址不在线下快递地址库中。
+**Cause:** The store profile has "Enable seller's own shipping (offline courier)" checked, causing the system to fail address validation because the platform address is not in the offline courier address database.
 
-**解决方法：**
-1. 店铺档案 → 点击【修改】→ **取消勾选**"启用卖家自己发货（线下快递）"
-2. 订单预处理 → 勾选地址异常订单 → 点击【删除】
-3. 发货单 → 新增右下拉 → 重新同步订单
+**Solution:**
+1. Store Profile → Click **[Edit]** → **Uncheck** "Enable seller's own shipping (offline courier)"
+2. Order Pre-processing → Select address-exception orders → Click **[Delete]**
+3. Shipment Orders → New dropdown → Re-sync the orders
 
-![取消线下快递参数](/img/img_041.png)
-![重新同步订单](/img/img_042.png)
+![Uncheck Offline Courier](/img/img_041.png)
+![Re-sync Orders](/img/img_042.png)
 
-## 已维护商品映射，订单匹配到错误商品
+## Product mapping is configured but orders match to the wrong product
 
-**原因：** 订单进入系统后，首先按商品档案条形码自动匹配；失败后再按商品映射关系匹配。若商品档案存在重复条形码则可能误匹配。
+**Cause:** When an order enters the system, it first tries to auto-match by product barcode; if that fails, it matches by product mapping. Duplicate barcodes in product profiles can cause incorrect matches.
 
-**解决方法：** 检查 SCM 商品档案中是否有条形码重复的商品，修正后重新同步订单。
+**Solution:** Check for duplicate barcodes in SCM product profiles, correct them, and re-sync the orders.
 
-![商品映射匹配](/img/img_054.png)
-![商品映射关系](/img/img_055.png)
+![Product Mapping Match](/img/img_054.png)
+![Product Mapping Relationships](/img/img_055.png)

@@ -4,37 +4,37 @@ title: Inventory Ownership Transfer
 sidebar_label: Ownership Transfer
 ---
 
-# 货权转移
+# Inventory Ownership Transfer
 
-用于将货品从 A 货主转移给 B 货主。
+Used to transfer goods from Merchant A to Merchant B.
 
-## 前置设置（条形码一致时）
+## Pre-requisite Setup (when barcodes are the same)
 
-若两边货主商品条码一致，可在 SCM → 设置 → 策略设置 中勾选 ☑️ **货权转移支持一键匹配** → 保存。
+If both merchants share the same product barcodes, you can enable auto-matching in SCM → Settings → Policy Settings → Check ☑️ **Ownership Transfer Supports One-click Matching** → Save.
 
-开启后，系统将自动把转出货主商品档案的所有信息同步到转入货主账号中。
+Once enabled, the system will automatically sync all product profile information from the outgoing merchant to the receiving merchant's account.
 
-![一键匹配设置](/img/img_027.png)
+![One-click Matching Setting](/img/img_027.png)
 
-## 操作步骤
+## Steps
 
-### A 货主（转出）
+### Merchant A (Outgoing)
 
-SCM → 库存单据 → 货权转移单（转出）→ 点击【新增】→ 填写【转移目标货主编码】→ 选择商品/数量 → 保存 → 审核
+SCM → Inventory Documents → Ownership Transfer (Outgoing) → Click **[New]** → Enter **[Target Merchant Code]** → Select products/quantities → Save → Approve
 
-![货权转移单转出](/img/img_028.png)
+![Ownership Transfer Outgoing](/img/img_028.png)
 
-### B 货主（转入）
+### Merchant B (Incoming)
 
-SCM → 库存单据 → 货权转移单（转入）→ 点击【匹配商品】→【一键匹配】→ 保存 → 点击【确认】
+SCM → Inventory Documents → Ownership Transfer (Incoming) → Click **[Match Products]** → **[One-click Match]** → Save → Click **[Confirm]**
 
-![货权转移单转入](/img/img_029.png)
-![一键匹配确认](/img/img_030.png)
+![Ownership Transfer Incoming](/img/img_029.png)
+![One-click Match Confirm](/img/img_030.png)
 
-> 双方货主都确认后，仓库才能看到单据并进行操作。
+> Both merchants must confirm before the warehouse can view the document and proceed with operations.
 
-### 仓库操作
+### Warehouse Operations
 
-勾选货权转移单号 → 点击【一键完成】→ 状态自动变为"已完成"
+Select the ownership transfer order number → Click **[Complete All]** → Status automatically changes to "Completed"
 
-![仓库一键完成](/img/img_032.png)
+![Warehouse Complete All](/img/img_032.png)

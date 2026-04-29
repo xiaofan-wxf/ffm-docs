@@ -4,17 +4,17 @@ title: Prepaid Balance Top-up
 sidebar_label: Top-up
 ---
 
-# 预付款充值
+# Prepaid Balance Top-up
 
-## 说明
+## Overview
 
-客户提前充值到货主账号，系统按每日流水扣除预付款金额。账号余额不足时系统会提醒；余额为 0 时，无法审核下发单据给仓库。
+Customers top up their merchant account balance in advance. The system deducts from the prepayment balance daily based on fee entries. The system will alert you when the balance is low; when the balance reaches zero, you will not be able to approve and dispatch documents to the warehouse.
 
-## 充值步骤
+## Top-up Steps
 
-1. SCM → 结算 → 我的余额 → 点击【充值】
-2. 填写充值金额及转账信息，上传充值转账截图
-3. 提交后等待财务审核到账
-4. 财务确认到账后，SCM 货主余额自动更新
+1. SCM → Billing → My Balance → Click **[Top-up]**
+2. Enter the top-up amount and transfer details, then upload a screenshot of the transfer
+3. Submit and wait for finance team to confirm receipt
+4. Once finance confirms, the SCM merchant balance is updated automatically
 
-![充值操作界面](/img/img_025.png)
+![Top-up Interface](/img/img_025.png)

@@ -4,45 +4,45 @@ title: Common Billing Issues
 sidebar_label: Billing Issues
 ---
 
-# 常见账单问题
+# Common Billing Issues
 
-## 仓储费异常
+## Storage Fee Anomaly
 
-**可能原因：**
-1. 商品档案中商品体积信息有误，导致计费不准
-2. 移库操作导致货位面积增加
+**Possible causes:**
+1. Incorrect product dimensions in the product profile, leading to inaccurate billing
+2. A stock relocation operation increased the storage area used
 
-**解决方法：** 联系运营人员核实商品档案体积信息，或确认移库记录。
+**Solution:** Contact operations staff to verify product dimension data in the product profile, or confirm the relocation records.
 
-## 包材费异常
+## Packaging Fee Anomaly
 
-**可能原因：** 扫描重复、扫描错误、漏扫包材。
+**Possible causes:** Duplicate scans, scan errors, or missed packaging scans.
 
-**解决方法：** 提供出库单号联系运营人员核查扫描记录。
+**Solution:** Provide the outbound order number and contact operations staff to check the scan records.
 
-## 租赁单到期导致费用流水缺失
+## Missing fee entries due to expired lease order
 
-请确保租赁单在到期前续签，否则系统将停止生成对应费用流水。
+Ensure your lease order is renewed before expiry; otherwise the system will stop generating corresponding fee entries.
 
-## 增值服务
+## Value-added Services
 
-以下服务需提前申请，费用按合同报价收取：
-- **用车服务：** SCM → 库存单据 → 服务申请单 → 新增 → 填写信息 → 保存 → 审核，复制 VO 单号通知商务/仓库
-- **仓库加班：** 联系商务报价
+The following services require advance application and are charged per contract rates:
+- **Vehicle service:** SCM → Inventory Documents → Service Request → New → Fill in details → Save → Approve, then copy the VO number and notify your account manager/warehouse
+- **Overtime work:** Contact your account manager for a quote
 
-## 是否可以自备包材/耗材
+## Can I use my own packaging materials?
 
-**不可以。** 仓内多条打包流水线，客户自备耗材不便管理。
+**No.** The warehouse operates multiple packing lines, and customer-supplied materials are difficult to manage.
 
-如有包材价格问题，可咨询更换为灰色无印刷塑料袋（成本更低）。
+If you have concerns about packaging costs, you may inquire about switching to a plain grey plastic bag (lower cost, no printing).
 
-## 其他常见问题
+## Other Common Questions
 
-| 问题 | 答案 |
-|------|------|
-| 海运/陆运时效 | 视具体线路而定，请联系商务确认 |
-| 海运/陆运最低消费 | 最小 1 立方，无其他限制 |
-| 海运/陆运税费 | 0 税率 |
-| 入库上架费计算单位 | 按件计费，标准箱可增加暗箱 |
-| 尾程物流服务商 | 平台订单由平台指定；非平台订单由仓库指定（目前仅对接 Flash Express） |
-| 头程丢件处理 | 按头程服务商合同约定规则赔付，当前标准不超过 200 RMB/件 |
+| Question | Answer |
+|----------|--------|
+| Sea/land freight transit time | Varies by route; contact your account manager |
+| Sea/land freight minimum charge | Minimum 1 CBM; no other restrictions |
+| Sea/land freight customs duties | 0% tax rate |
+| Inbound shelving fee unit | Per item; standard cartons can include hidden inner boxes |
+| Last-mile carrier | Platform orders use the platform-designated carrier; non-platform orders use the warehouse carrier (currently Flash Express only) |
+| First-mile lost shipment compensation | Per the first-mile carrier's contract terms; current standard is no more than 200 RMB per item |

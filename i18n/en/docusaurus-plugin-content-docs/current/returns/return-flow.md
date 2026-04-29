@@ -4,32 +4,32 @@ title: Return Processing Flow
 sidebar_label: Return Flow
 ---
 
-# 退货处理流程
+# Return Processing Flow
 
-## 场景一：非本地仓发的退货（包裹到仓前，客户未创建销退单）
+## Scenario 1: Return from a non-local warehouse (package arrives before merchant creates a return order)
 
-1. 退货包裹到仓，仓库登记到系统
-2. 客户在 SCM → 销售 → **销退登记表** → 输入运单号查询 → 点击【认领】
-3. 仓库收到认领信息后，将包裹重新上架入库
+1. The returned package arrives at the warehouse and is registered in the system
+2. The merchant logs into SCM → Sales → **Return Registration** → Search by tracking number → Click **[Claim]**
+3. After the warehouse receives the claim notification, the package is shelved back into inventory
 
-## 场景二：非本地仓发的退货（客户已创建销退单，包裹后到仓）
+## Scenario 2: Return from a non-local warehouse (merchant has already created a return order; package arrives later)
 
-1. 客户登录 SCM，提前创建销退单，可在单据中备注包裹处理注意事项
-2. 包裹到仓时，仓库按运单号匹配销退单并合并状态
-3. 仓库重新上架入库
+1. The merchant logs into SCM and creates a return order in advance; special handling notes can be added to the order
+2. When the package arrives at the warehouse, staff matches it to the return order by tracking number and merges the status
+3. The warehouse re-shelves the package into inventory
 
-## 场景三：本地仓发的退货
+## Scenario 3: Return from a local warehouse
 
-流程同场景二，无需客户手动创建销退单，系统自动生成。
+The process is the same as Scenario 2. The merchant does not need to create a return order manually — the system generates it automatically.
 
-## 错发/漏发处理
+## Wrong Item / Missing Item Handling
 
-**错发：**
-1. 客户提供买家联系方式
-2. 仓库联系买家沟通发错商品退回
-3. 客户同意补发后，仓库联系买家补发并消除影响
-4. 货物收到后做归位处理
+**Wrong item sent:**
+1. Merchant provides the buyer's contact information
+2. The warehouse contacts the buyer to arrange the return of the wrong item
+3. After the merchant approves the replacement, the warehouse contacts the buyer to send the correct item and resolve the issue
+4. The returned item is shelved back into inventory
 
-**漏发：**
-1. 客户提供买家联系方式，客户同意补发
-2. 仓库联系买家补发并消除影响
+**Missing item (not shipped):**
+1. Merchant provides the buyer's contact information; merchant approves the replacement
+2. The warehouse contacts the buyer to send the missing item and resolve the issue

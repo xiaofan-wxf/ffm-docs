@@ -4,26 +4,26 @@ title: Inbound Appointment & Receiving Hours
 sidebar_label: Appointment & Hours
 ---
 
-# 入库预约与收货时间
+# Inbound Appointment & Receiving Hours
 
-## 收货时间
+## Receiving Hours
 
-**正常收货：** 周一至周六，09:00–16:00 到货
+**Regular receiving:** Monday to Saturday, arriving between 09:00–16:00
 
-**不收货日：**
-- 周日
-- 泰国法定节假日
-- 大促活动前 1 天、后 2 天
+**No receiving on:**
+- Sundays
+- Thai public holidays
+- 1 day before and 2 days after major promotional events
 
-## 预约方式
+## How to Book an Appointment
 
-仓库采用系统预约方式接收货物。通过预约到货的客户优先收货上架；临时送货优先级最低。
+The warehouse uses a system-based appointment process for inbound goods. Customers who book in advance receive priority for receiving and shelving. Walk-in deliveries have the lowest priority.
 
-**紧急入库**请提前联系商务，安排额外人力（另行报价）。
+For **urgent inbound** requests, contact your account manager in advance to arrange extra manpower (additional charges apply).
 
-## 入库时效
+## Inbound SLA
 
-| 情况 | 时效 |
-|------|------|
-| 正常商品（预约到货） | 收货后 48 小时内上架 |
-| 新品（需做新品维护） | 不超过 72 小时 |
+| Scenario | SLA |
+|----------|-----|
+| Regular products (pre-scheduled delivery) | Shelved within 48 hours of receipt |
+| New products (requiring new product setup) | No more than 72 hours |

@@ -4,50 +4,50 @@ title: TikTok Store Authorization
 sidebar_label: TikTok
 ---
 
-# TikTok 店铺授权
+# TikTok Store Authorization
 
-## 授权入口
+## Authorization Entry
 
-SCM → 设置 → 店铺档案 → 选择 TikTok 店铺 → 点击【授权】
+SCM → Settings → Store Profile → Select TikTok Store → Click **[Authorize]**
 
-跨境 3PF 和本土店铺使用不同授权入口，请根据店铺类型选择。
+Cross-border 3PF stores and local stores use different authorization entries. Please select based on your store type.
 
-## 常见问题
+## Common Issues
 
-### 授权失败：平台已授权但 SCM 显示"未授权"
+### Authorization Failed: Store is authorized on the platform but SCM shows "Unauthorized"
 
-**原因：** 跨境店授权时选错了本土入口。
+**Cause:** The cross-border store used the local store authorization entry by mistake.
 
-**解决方法：**
-1. 登录 TikTok 平台后台 → 应用和服务市场 → 应用商店
-2. 点击右上角 `...` → 我的应用和事件
-3. 找到 FlashFulfilment-ERP → 点击【删除】
-4. 回到 SCM 店铺档案，重新发起授权
+**Solution:**
+1. Log in to TikTok Seller Center → App and Services Marketplace → App Store
+2. Click `...` in the top right → My Apps and Events
+3. Find FlashFulfilment-ERP → Click **[Delete]**
+4. Return to SCM Store Profile and re-authorize
 
-![TikTok应用删除](/img/img_043.png)
+![Delete TikTok App](/img/img_043.png)
 
-### 一品多仓获取商品失败（商品映射同步不了平台商品）
+### Multi-warehouse product sync failure (product mapping cannot sync platform products)
 
-**原因：** 店铺为"一品多仓"模式，但 SCM 未开启对应参数。
+**Cause:** The store is in "multi-warehouse" mode, but the corresponding parameter has not been enabled in SCM.
 
-**解决方法：**
-1. 确认客户 TikTok 平台后台已在【仓库和库存】模块开启一品多仓
-2. SCM → 店铺档案 → 勾选 ☑️ **开通一品多仓**（确认已在 TikTok 开通白名单，保存后无法取消）
+**Solution:**
+1. Confirm the customer has enabled multi-warehouse mode in TikTok Seller Center under **[Warehouse & Inventory]**
+2. SCM → Store Profile → Check ☑️ **Enable Multi-warehouse** (confirm whitelist approval on TikTok first; cannot be unchecked after saving)
 
-若不是一品多仓，则不需要勾选。
+If the store is not in multi-warehouse mode, leave this unchecked.
 
-![一品多仓平台设置](/img/img_046.png)
-![SCM开启一品多仓](/img/img_047.png)
+![Platform Multi-warehouse Setting](/img/img_046.png)
+![SCM Enable Multi-warehouse](/img/img_047.png)
 
-### 自动同步库存失败
+### Auto stock sync failure
 
-**原因：** 商品映射成功后，客户在平台修改了 SKU 链接信息，导致 SCM 同步库存成功但平台后台库存未更新。
+**Cause:** After successful product mapping, the customer modified SKU link information on the platform, causing SCM to sync stock successfully but the platform back-end inventory not updating.
 
-**解决方法：** 删除已映射关系，重新同步商品映射。
+**Solution:** Delete the existing mapping relationship and re-sync product mapping.
 
-### TT海外仓报白
+### TikTok Overseas Warehouse Whitelist Application
 
-如需申请 TikTok 海外仓报白，相关信息如下：
-- 是否有 ERP：是
-- ERP 名称：FlashFulfillment-SCM
-- 是否改造完成：是
+To apply for TikTok overseas warehouse whitelist, provide the following information:
+- ERP available: Yes
+- ERP name: FlashFulfillment-SCM
+- Integration complete: Yes
