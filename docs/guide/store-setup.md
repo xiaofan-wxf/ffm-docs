@@ -10,6 +10,8 @@ sidebar_label: 店铺创建与授权
 
 **操作路径：** SCM → 设置 → 店铺档案 → 点击【新增】
 
+![店铺档案列表](/img/img_001.png)
+
 1. 填写店铺名称
 2. 选择销售平台（TikTok / Shopee / Lazada / 其他）
 3. 选择国家
@@ -17,9 +19,13 @@ sidebar_label: 店铺创建与授权
 5. 寄件人信息：选择"使用仓库的寄件地址"
 6. 点击【保存】→ 点击【启用】
 
+![新增店铺表单](/img/img_002.png)
+
 :::caution 注意
 新添加的店铺默认为存盘状态，需点击【启用】才可使用。店铺保存后，再进行平台授权，授权完成后回来配置店铺接口信息。
 :::
+
+![店铺存盘状态，需点击启用](/img/img_003.png)
 
 ---
 
@@ -35,6 +41,8 @@ TikTok 跨境 3PF 和本土店铺使用不同的授权入口：
 |---------|---------|
 | 跨境 3PF 店铺 | 选择 "3P Seller"（选择 Thailand 等对应国家子账号授权入口） |
 | 本土店铺 | 选择 "Thailand" 直接账号密码登录 |
+
+![TikTok授权入口选择](/img/img_004.png)
 
 :::caution TK 跨境店注意
 TK 跨境店：主账号授权后，需选择要授权的具体子店铺，一对一授权。
@@ -57,11 +65,15 @@ TK 跨境店：主账号授权后，需选择要授权的具体子店铺，一�
 | 本土店铺 | 按国家选择后，输入账号密码登录 |
 | 3PF 跨境店铺 | 点击 "Switch to Sub Account"，用主账号登录 |
 
+![Shopee授权登录页](/img/img_005.png)
+
 ---
 
 ### Lazada 授权
 
 Lazada 需先在服务市场订购 Flash WMS，再回 SCM 完成授权，详细步骤见 [Lazada 授权](../platform/lazada)。
+
+![Lazada订购成功](/img/img_010.png)
 
 ---
 
@@ -71,6 +83,8 @@ Lazada 需先在服务市场订购 Flash WMS，再回 SCM 完成授权，详细�
 - TikTok：商家资料 → 仓库管理 → 选择 Flash Fulfillment 仓库
 
 Lazada 授权后配置（发货地址 + SCM 平台仓库设置）见 [Lazada 授权](../platform/lazada)。
+
+![Lazada仓库地址设置示例](/img/img_015.png)
 
 ---
 
