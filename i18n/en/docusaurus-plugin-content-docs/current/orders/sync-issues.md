@@ -10,12 +10,25 @@ sidebar_label: Order Sync
 
 **Cause:** The order was manually marked as shipped on the platform, causing a status change that prevents the API from pushing it to SCM.
 
-**Solution (manual sync):**
-1. SCM → Sales → Shipment Orders → Click the dropdown arrow next to **[New]** → Select **Online Store**
+### Method 1: Manual Order Creation + Upload Platform Shipping Label
+
+Use when **the platform order was already marked as shipped and the order cannot be fetched via API**:
+
+1. SCM → Sales → Shipment Orders → Click **[New]** → Fill in consignee info and the **platform tracking number** (phone number must start with 0, 9 digits) → Enter products and quantities → Click **[Save]** → Click **[Approve]**
+2. The shipment order status changes to **Failed to Fetch Label**
+3. Log in to the platform and download the shipping label PDF for that order
+4. Go back to the shipment order in SCM → Click **[Handle Failed Label Fetch]** in the header → Upload the label PDF
+5. The system verifies the label matches a platform courier and automatically links it — status changes to **Outbounding**, and the order is sent to the warehouse normally
+
+### Method 2: Sync via External Order Number
+
+Use when **the platform order status is normal but it wasn't auto-fetched** (including COD orders):
+
+1. SCM → Sales → Shipment Orders → Click the dropdown next to **[New]** → Select **Online Store**
 2. Enter the external order number (platform order ID) → Click **[Fetch Order]** and **[Sync Order Log]**
 3. The order should now appear in the shipment order list
 
-**COD order note:** COD order API pushes are delayed compared to regular paid orders. Wait a moment for automatic sync, or use the manual sync method above.
+**COD order note:** COD order API pushes are delayed compared to regular paid orders. Wait a moment for automatic sync, or use Method 2 above.
 
 ## Sync Log: Order does not belong to this warehouse
 
@@ -52,6 +65,12 @@ sidebar_label: Order Sync
 
 ![Uncheck Offline Courier](/img/img_041.png)
 ![Re-sync Orders](/img/img_042.png)
+
+:::tip Thai Address Region Selection
+Thai addresses in SCM follow a **Sub-district → District → Province** three-level structure, searchable by **English / Thai / postal code**:
+- **SCM Web:** Address fields support Chinese, English, Thai, and postal code search
+- **SCM Client App:** Supports Chinese/English/Thai/postal code, plus **smart address parsing** (paste an address string and it auto-fills the fields)
+:::
 
 ## Product mapping is configured but orders match to the wrong product
 

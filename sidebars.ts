@@ -4,6 +4,18 @@ const sidebars: SidebarsConfig = {
   mainSidebar: [
     {
       type: 'category',
+      label: '操作指南',
+      items: [
+        'guide/product-profile',
+        'guide/inbound-notice',
+        'guide/outbound-notice',
+        'guide/store-setup',
+        'guide/product-mapping',
+        'guide/order-preprocessing',
+      ],
+    },
+    {
+      type: 'category',
       label: '入库须知',
       items: ['inbound/requirements', 'inbound/addresses', 'inbound/appointment'],
     },
