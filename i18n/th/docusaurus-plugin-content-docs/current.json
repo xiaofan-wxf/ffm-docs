@@ -3,32 +3,36 @@
     "message": "Next",
     "description": "The label for version current"
   },
+  "sidebar.mainSidebar.category.操作指南": {
+    "message": "คู่มือการใช้งาน",
+    "description": "The label for category '操作指南' in sidebar 'mainSidebar'"
+  },
   "sidebar.mainSidebar.category.入库须知": {
-    "message": "入库须知",
+    "message": "ข้อกำหนดการนำเข้า",
     "description": "The label for category '入库须知' in sidebar 'mainSidebar'"
   },
   "sidebar.mainSidebar.category.店铺授权": {
-    "message": "店铺授权",
+    "message": "การเชื่อมต่อร้านค้า",
     "description": "The label for category '店铺授权' in sidebar 'mainSidebar'"
   },
   "sidebar.mainSidebar.category.订单处理": {
-    "message": "订单处理",
+    "message": "การจัดการออร์เดอร์",
     "description": "The label for category '订单处理' in sidebar 'mainSidebar'"
   },
   "sidebar.mainSidebar.category.时效标准": {
-    "message": "时效标准",
+    "message": "SLA และกำหนดเวลา",
     "description": "The label for category '时效标准' in sidebar 'mainSidebar'"
   },
   "sidebar.mainSidebar.category.账单与服务": {
-    "message": "账单与服务",
+    "message": "บิลและบริการ",
     "description": "The label for category '账单与服务' in sidebar 'mainSidebar'"
   },
   "sidebar.mainSidebar.category.退货与退仓": {
-    "message": "退货与退仓",
+    "message": "การคืนสินค้า",
     "description": "The label for category '退货与退仓' in sidebar 'mainSidebar'"
   },
   "sidebar.internalSidebar.category.内部资料": {
-    "message": "内部资料",
+    "message": "ข้อมูลภายใน",
     "description": "The label for category '内部资料' in sidebar 'internalSidebar'"
   }
 }
