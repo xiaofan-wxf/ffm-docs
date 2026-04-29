@@ -1,20 +1,19 @@
 // src/components/AiChat/index.tsx
 import React, { useState } from 'react';
-import { useLocation } from '@docusaurus/router';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css';
 import ChatModal from './ChatModal';
 
 type Lang = 'zh' | 'en' | 'th';
 
+const SUPPORTED_LANGS = new Set<Lang>(['zh', 'en', 'th']);
+
 export default function AiChat(): React.JSX.Element {
   const [open, setOpen] = useState(false);
-  const location = useLocation();
+  const { i18n } = useDocusaurusContext();
 
-  const lang: Lang = location.pathname.startsWith('/en')
-    ? 'en'
-    : location.pathname.startsWith('/th')
-    ? 'th'
-    : 'zh';
+  const locale = i18n.currentLocale;
+  const lang: Lang = SUPPORTED_LANGS.has(locale as Lang) ? (locale as Lang) : 'zh';
 
   return (
     <>

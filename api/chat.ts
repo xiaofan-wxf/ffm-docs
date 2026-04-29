@@ -11,9 +11,8 @@ const client = new OpenAI({
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') return res.status(405).end();
 
-  const { messages, lang = 'zh' } = req.body as {
+  const { messages } = req.body as {
     messages: { role: 'user' | 'assistant'; content: string }[];
-    lang?: 'zh' | 'en' | 'th';
   };
 
   if (!messages || !Array.isArray(messages) || messages.length === 0) {
@@ -26,10 +25,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const stream = await client.chat.completions.create({
     model: 'deepseek-chat',
-    max_tokens: 1024,
+    max_tokens: 2048,
     stream: true,
     messages: [
-      { role: 'system', content: buildSystemPrompt(lang as 'zh' | 'en' | 'th') },
+      { role: 'system', content: buildSystemPrompt() },
       ...messages,
     ],
   });

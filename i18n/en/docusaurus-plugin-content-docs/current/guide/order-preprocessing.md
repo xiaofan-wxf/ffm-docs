@@ -25,6 +25,8 @@ When a platform order enters an exception state due to a product error that can'
 4. Click **[Auto-Map Exception Products]**
 5. Click **[Generate Shipment Order]**
 
+![Order pre-processing - product exception handling](/img/23_订单预处理_商品异常处理.jpg)
+
 ---
 
 ## Entry 2: Maintain Product Mapping Directly

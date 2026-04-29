@@ -21,8 +21,8 @@
   position: fixed;
   bottom: 90px;
   right: 24px;
-  width: 360px;
-  height: 500px;
+  width: 480px;
+  height: 640px;
   background: var(--ifm-background-color);
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 12px;
@@ -66,10 +66,10 @@
   background: var(--ifm-color-emphasis-100);
   padding: 8px 12px;
   border-radius: 12px 12px 12px 0;
-  max-width: 80%;
+  max-width: 90%;
   font-size: 14px;
-  white-space: pre-wrap;
   word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .inputRow {

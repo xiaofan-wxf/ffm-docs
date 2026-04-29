@@ -1,5 +1,6 @@
 // src/components/AiChat/ChatModal.tsx
 import React, { useState, useRef, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import styles from './styles.module.css';
 
 interface Message {
@@ -38,7 +39,7 @@ export default function ChatModal({ onClose, lang }: Props): React.JSX.Element {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: history, lang }),
+        body: JSON.stringify({ messages: history }),
       });
 
       const reader = res.body!.getReader();
@@ -91,7 +92,27 @@ export default function ChatModal({ onClose, lang }: Props): React.JSX.Element {
       <div className={styles.messages}>
         {messages.map((msg, i) => (
           <div key={i} className={msg.role === 'user' ? styles.userMsg : styles.assistantMsg}>
-            {msg.content || (msg.role === 'assistant' && loading ? '...' : '')}
+            {msg.role === 'user' ? (
+              msg.content
+            ) : (
+              <ReactMarkdown
+                components={{
+                  img: ({ src, alt }) => (
+                    <img
+                      src={src}
+                      alt={alt}
+                      style={{ maxWidth: '100%', borderRadius: 6, marginTop: 4 }}
+                    />
+                  ),
+                  a: ({ href, children }) => (
+                    <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
+                  ),
+                  p: ({ children }) => <p style={{ margin: '4px 0' }}>{children}</p>,
+                }}
+              >
+                {msg.content || (loading ? '...' : '')}
+              </ReactMarkdown>
+            )}
           </div>
         ))}
         <div ref={bottomRef} />

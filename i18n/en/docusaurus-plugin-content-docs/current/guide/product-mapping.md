@@ -42,9 +42,13 @@ Use this when the platform lists a bundle SKU (multiple individual products sold
 
 Path: Products → Product Bundles → Click **[New]**
 
+![Bundle profile list](/img/20_套装档案列表.jpg)
+
 1. Enter the bundle name
 2. Add the individual products and quantities (selected from existing product profiles)
 3. Save → Click **[Enable]**
+
+![Create bundle profile](/img/20_套装档案创建.jpg)
 
 **Step 2: Sync Platform Bundle Products**
 
@@ -57,6 +61,10 @@ Same as standard product mapping: Product Mapping → New dropdown → Sync Prod
 3. Paste the bundle barcode into the "Barcode" field for that entry
 4. Click **[Update Inventory]** to sync bundle stock to the platform
 
+![Bundle mapping](/img/21_套装映射关系.jpg)
+
+![Bundle inventory update](/img/21_套装库存更新.jpg)
+
 ---
 
 ## Manual Inventory Sync
@@ -65,11 +73,15 @@ Same as standard product mapping: Product Mapping → New dropdown → Sync Prod
 
 **Path:** Products → Product Mapping → Find the product → Click **[Update Inventory]** on the right
 
+![Single SKU inventory update](/img/22_单SKU库存更新.jpg)
+
 After clicking, check **[Inventory Update Log]** to view success or failure details.
 
 ### Batch Sync by Store
 
 **Path:** Products → Product Mapping → Dropdown next to New → **[Sync Products]**
+
+![Batch sync by store](/img/22_按店铺批量同步.jpg)
 
 1. Select the store
 2. Set time range to **All**
