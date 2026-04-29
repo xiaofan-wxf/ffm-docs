@@ -1,7 +1,7 @@
 ---
 id: recharge
-title: 预付款充值
-sidebar_label: 预付款充值
+title: Prepaid Balance Top-up
+sidebar_label: Top-up
 ---
 
 # 预付款充值

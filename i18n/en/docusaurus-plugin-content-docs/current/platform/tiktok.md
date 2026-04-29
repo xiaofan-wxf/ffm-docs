@@ -1,6 +1,6 @@
 ---
 id: tiktok
-title: TikTok 店铺授权
+title: TikTok Store Authorization
 sidebar_label: TikTok
 ---
 

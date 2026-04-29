@@ -1,6 +1,6 @@
 ---
 id: shopee
-title: Shopee 店铺授权
+title: Shopee Store Authorization
 sidebar_label: Shopee
 ---
 

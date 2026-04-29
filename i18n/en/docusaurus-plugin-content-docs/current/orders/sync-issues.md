@@ -1,7 +1,7 @@
 ---
 id: sync-issues
-title: 订单抓取与同步问题
-sidebar_label: 订单同步
+title: Order Sync Issues
+sidebar_label: Order Sync
 ---
 
 # 订单抓取与同步问题

@@ -1,7 +1,7 @@
 ---
 id: cancellation
-title: 平台订单取消
-sidebar_label: 订单取消
+title: Platform Order Cancellation
+sidebar_label: Order Cancellation
 ---
 
 # 平台订单取消

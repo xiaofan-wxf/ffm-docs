@@ -1,7 +1,7 @@
 ---
 id: transfer
-title: 货权转移
-sidebar_label: 货权转移
+title: Inventory Ownership Transfer
+sidebar_label: Ownership Transfer
 ---
 
 # 货权转移

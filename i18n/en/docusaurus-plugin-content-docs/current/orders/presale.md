@@ -1,7 +1,7 @@
 ---
 id: presale
-title: 预售订单处理
-sidebar_label: 预售订单
+title: Pre-sale Order Processing
+sidebar_label: Pre-sale Orders
 ---
 
 # 预售订单处理
