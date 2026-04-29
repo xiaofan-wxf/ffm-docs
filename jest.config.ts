@@ -8,6 +8,7 @@ const config: Config = {
       tsconfig: {
         jsx: 'react',
         esModuleInterop: true,
+        types: ['jest', 'node', 'react'],
       },
     }],
   },
