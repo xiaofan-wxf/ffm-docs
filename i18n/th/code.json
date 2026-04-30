@@ -1,4 +1,22 @@
 {
+  "home.title": { "message": "FFM ศูนย์ช่วยเหลือ" },
+  "home.description": { "message": "คู่มือการใช้งาน Flash Fulfillment & คำถามที่พบบ่อย" },
+  "home.hero.title": { "message": "FFM ศูนย์ช่วยเหลือ" },
+  "home.hero.subtitle": { "message": "คู่มือการใช้งาน Flash Fulfillment & คำถามที่พบบ่อย" },
+  "home.module.guide.label": { "message": "คู่มือการใช้งาน" },
+  "home.module.guide.desc": { "message": "โปรไฟล์สินค้า, ใบแจ้งรับสินค้า, การแมปสินค้า, การประมวลผลล่วงหน้า" },
+  "home.module.inbound.label": { "message": "ข้อกำหนดการรับสินค้า" },
+  "home.module.inbound.desc": { "message": "มาตรฐานกล่อง, กฎการปฏิเสธ, ที่อยู่คลัง, การนัดหมาย" },
+  "home.module.store.label": { "message": "การอนุญาตร้านค้า" },
+  "home.module.store.desc": { "message": "การอนุญาต TikTok, Shopee, Lazada & ปัญหาที่พบบ่อย" },
+  "home.module.orders.label": { "message": "การจัดการออเดอร์" },
+  "home.module.orders.desc": { "message": "การซิงค์ออเดอร์, ออเดอร์พรีออเดอร์, ขั้นตอนการยกเลิก" },
+  "home.module.sla.label": { "message": "มาตรฐาน SLA" },
+  "home.module.sla.desc": { "message": "SLA การรับสินค้า, เวลาตัดรอบออกสินค้า, เวลาทำการคลัง" },
+  "home.module.billing.label": { "message": "การเรียกเก็บเงิน & บริการ" },
+  "home.module.billing.desc": { "message": "ค่าจัดเก็บ, ค่าบรรจุภัณฑ์, การเติมเงิน & บริการเพิ่มมูลค่า" },
+  "home.module.returns.label": { "message": "การคืนสินค้า & นำออก" },
+  "home.module.returns.desc": { "message": "ขั้นตอนคืนสินค้า, การโอนกรรมสิทธิ์, การจัดการส่งผิด & ขาด" },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"

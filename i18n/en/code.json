@@ -1,4 +1,22 @@
 {
+  "home.title": { "message": "FFM Help Center" },
+  "home.description": { "message": "Flash Fulfillment Operations Manual & FAQ" },
+  "home.hero.title": { "message": "FFM Help Center" },
+  "home.hero.subtitle": { "message": "Flash Fulfillment Operations Manual & FAQ" },
+  "home.module.guide.label": { "message": "Operations Guide" },
+  "home.module.guide.desc": { "message": "Product profiles, inbound notices, product mapping, order pre-processing" },
+  "home.module.inbound.label": { "message": "Inbound Requirements" },
+  "home.module.inbound.desc": { "message": "Box standards, rejection rules, warehouse address, appointments" },
+  "home.module.store.label": { "message": "Store Authorization" },
+  "home.module.store.desc": { "message": "TikTok, Shopee, Lazada authorization & common issues" },
+  "home.module.orders.label": { "message": "Order Handling" },
+  "home.module.orders.desc": { "message": "Order sync, pre-sale orders, cancellation flow" },
+  "home.module.sla.label": { "message": "SLA Standards" },
+  "home.module.sla.desc": { "message": "Inbound SLA, outbound cut-off times, warehouse hours" },
+  "home.module.billing.label": { "message": "Billing & Services" },
+  "home.module.billing.desc": { "message": "Storage fees, packaging fees, top-up & value-added services" },
+  "home.module.returns.label": { "message": "Returns & Removal" },
+  "home.module.returns.desc": { "message": "Return flow, cargo transfer, mis-ship & shortage handling" },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
