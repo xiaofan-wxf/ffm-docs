@@ -23,13 +23,17 @@
   right: 24px;
   width: 480px;
   height: 640px;
-  background: var(--ifm-background-color);
+  background: #ffffff;
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 32px rgba(0,0,0,0.2);
   z-index: 1000;
+}
+
+[data-theme='dark'] .modal {
+  background: #1b1b1d;
 }
 
 .header {
@@ -85,7 +89,7 @@
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 8px;
   font-size: 14px;
-  background: var(--ifm-background-color);
+  background: #ffffff;
   color: var(--ifm-font-color-base);
   resize: none;
 }
